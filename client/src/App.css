@@ -1,0 +1,79 @@
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.home {
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.home .subtitle {
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.home-panels {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.panel {
+  background: #1a1a2e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 2rem;
+  min-width: 280px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.panel input {
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #16162a;
+  color: #eee;
+  font-size: 0.95rem;
+}
+
+.panel input::placeholder {
+  color: #666;
+}
+
+.panel button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  background: #646cff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.panel button:hover {
+  background: #535bf2;
+}
+
+.divider {
+  color: #666;
+  font-size: 1rem;
+  font-weight: 500;
+}
