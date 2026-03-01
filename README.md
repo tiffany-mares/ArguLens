@@ -19,12 +19,7 @@ When the debate ends, the AI produces a comprehensive summary including the winn
 
 ### Architecture
 
-```
-┌─────────────┐       WebSocket        ┌─────────────┐       API Call       ┌─────────────┐
-│   React     │ ◄──────────────────►   │   Node.js   │ ──────────────────►  │  AWS Bedrock │
-│   Client    │    (real-time events)   │   Server    │   (Claude 3.5)      │  (AI Judge)  │
-└─────────────┘                        └─────────────┘                      └─────────────┘
-```
+![ArguLens Software Architecture](assets/architecture-diagram.png)
 
 1. **Users connect** to a WebSocket server and create or join a debate room using a room code
 2. **Speakers send messages** which are broadcast instantly to all participants
